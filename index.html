@@ -7,25 +7,53 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Fylo data storage component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <section class="showcase">
 
-  You’ve used 815 GB of your storage
+    <div class="container ">
+      <div class="showcase-main flex center">
+        <div class="logo-card flex">
+          <header class="head">
+            <img src="images/logo.svg" alt="logo" class="logo">
+          </header>
+          <ul class="sub-head flex">
+            <li><img src="images/icon-document.svg" alt="" class="document"></li>
+            <li><img src="images/icon-folder.svg" alt="" class="folder"></li>
+            <li><img src="images/icon-upload.svg" alt="" class="upload"></li>
+          </ul>
+        </div>
 
-  185 GB Left
+        <div class="progress-card">
+          <div class="bubble bubble-bottom-left flex">
+            <strong>185</strong>
+            <p>GB Left</p>
+          </div>
+          <div class="main">
+            <p>You've used <strong>815 GB</strong> of your storage</p>
+            <div class="progress-info-card">
+            </div>
+            <div class="progress-bar flex">
+              <div class="fill">
+                <div class="ball"></div>
+              </div>
+            </div>
+            <div class="progress-limits flex">
+              <p class="progress-start">0 GB</p>
+              <p class="progress-end">1000 GB</p>
+            </div>
+          </div>   
+          
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/Jimmy772">Jimmy772</a>.
+    </div>
+  </section>
+   
   
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>

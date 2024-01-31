@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  position: relative;
+  width: 1440px;
+  height: 800px;
+  margin: 100px auto 0;
+  overflow: auto;
+  padding: 0 40px;
+  background: url(../images/bg-desktop.png), hsl(229, 57%, 11%);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.showcase {
+  background: white;
+}
+
+.showcase-main {
+  justify-content: center;
+}
+
+.logo-card {
+  padding: 40px;
+  background: hsl(228, 56%, 26%);
+  border-radius: 8px 90px 8px 8px;
+  width: 300px;
+  align-self: flex-end;
+  height: fit-content;
+  flex-direction: column;
+}
+.logo-card .head {
+  margin-bottom: 25px;
+}
+.logo-card .sub-head li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  background: hsl(229, 57%, 11%);
+  border-radius: 8px;
+  width: 45px;
+  height: 45px;
+}
+
+.progress-card {
+  position: relative;
+  align-self: flex-end;
+  background: hsl(228, 56%, 26%);
+  box-sizing: content-box;
+  color: white;
+  padding: 40px;
+  margin-left: 30px;
+  border-radius: 8px;
+}
+
+.progress-bar {
+  position: relative;
+  width: 600px;
+  height: 20px;
+  background: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px 0 10px;
+}
+.progress-bar .fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 81.5%;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  z-index: 1;
+  border-radius: 10px;
+}
+.progress-bar .ball {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  width: 18px;
+  border-radius: 50%;
+  height: 90%;
+  background: white;
+  z-index: 2;
+}
+
+.progress-limits {
+  justify-content: space-between;
+}
+
+.bubble {
+  position: absolute;
+  top: -50px;
+  right: 50px;
+  line-height: 24px;
+  width: 200px;
+  background: #fff;
+  border-radius: 20px 20px 0;
+  padding: 34px 0 24px 34px;
+  text-align: center;
+  color: hsl(229, 7%, 55%);
+  text-transform: uppercase;
+}
+.bubble strong {
+  font-size: 2.5rem;
+  color: hsl(229, 57%, 11%);
+  margin-right: 10px;
+}
+
+.bubble-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 12px solid transparent;
+  border-right: 24px solid #fff;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  right: 0;
+  bottom: -24px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 56%, 26%);
+}
