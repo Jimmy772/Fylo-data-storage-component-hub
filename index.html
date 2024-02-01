@@ -1,59 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+      
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        
+        <title>Frontend Mentor | Fylo data storage component</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo data storage component</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <section class="showcase">
+        <section>
+            <div class="container bg-color bg-img flex">
+                <div class="showcase flex">
 
-    <div class="container ">
-      <div class="showcase-main flex center">
-        <div class="logo-card flex">
-          <header class="head">
-            <img src="images/logo.svg" alt="logo" class="logo">
-          </header>
-          <ul class="sub-head flex">
-            <li><img src="images/icon-document.svg" alt="" class="document"></li>
-            <li><img src="images/icon-folder.svg" alt="" class="folder"></li>
-            <li><img src="images/icon-upload.svg" alt="" class="upload"></li>
-          </ul>
-        </div>
+                    <!-- LOGO PART -->
+                    <div class="logo-card flex">
+                        <div class="logo">
+                            <img src="images/logo.svg" alt="logo" class="logo">
+                        </div>
+                        <div class="menu-items">
+                            <ul class="flex">
+                                <li class="flex"><img src="images/icon-document.svg" alt="" class="document"></li>
+                                <li class="flex"><img src="images/icon-folder.svg" alt="" class="folder"></li>
+                                <li class="flex"><img src="images/icon-upload.svg" alt="" class="upload"></li>
+                            </ul>
+                        </div>
+                    </div>
 
-        <div class="progress-card">
-          <div class="bubble bubble-bottom-left flex">
-            <strong>185</strong>
-            <p>GB Left</p>
-          </div>
-          <div class="main">
-            <p>You've used <strong>815 GB</strong> of your storage</p>
-            <div class="progress-info-card">
+                    <!-- PROGRESS BAR -->
+                    <div class="progress-card">
+                        <div class="bubble bubble-bottom-left">
+                            <p><strong>185</strong> GB Left</p>
+                        </div>
+                        <div class="main">
+                            <p>You've used <strong>815 GB</strong> of your storage</p>
+                            <div class="bar">
+                                <div class="fill">
+                                    <div class="ball"></div>
+                                </div>
+                            </div>
+                            <div class="limits flex">
+                                <p class="min">0 GB</p>
+                                <p class="max">1000 GB</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
-            <div class="progress-bar flex">
-              <div class="fill">
-                <div class="ball"></div>
-              </div>
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="https://www.frontendmentor.io/profile/Jimmy772">Jimmy772</a>.
             </div>
-            <div class="progress-limits flex">
-              <p class="progress-start">0 GB</p>
-              <p class="progress-end">1000 GB</p>
-            </div>
-          </div>   
-          
-        </div>
-      </div>
-    </div>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.frontendmentor.io/profile/Jimmy772">Jimmy772</a>.
-    </div>
-  </section>
-   
-  
-</body>
+        </section>
+        
+        <script src="" async defer></script>
+    </body>
 </html>
